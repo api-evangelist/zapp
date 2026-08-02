@@ -1,8 +1,27 @@
 aid: zapp
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/zapp.png
 name: Zapp
-description: Zapp is a company surfaced as a portfolio company of lightspeed-venture-partners and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Zapp is a London-based premium quick-commerce (q-commerce) business that delivers
+  daily essentials such as snacks, drinks, groceries, household items and pharmacy
+  needs across central London in minutes, 24/7. Founded in 2020 by Navid Hadzaad and
+  Joe Falter, the company operates a network of micro-fulfilment "dark stores" and a
+  consumer mobile app (iOS and Android) rather than a public developer platform. Zapp
+  is a venture-backed company whose investors include Lightspeed Venture Partners. As
+  of this profile, Zapp exposes no public developer API, developer portal, or API
+  documentation; it is a business-to-consumer delivery brand surfaced in the API
+  Evangelist network as a company lead.
 url: https://raw.githubusercontent.com/api-evangelist/zapp/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,12 +31,32 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
-apis: []
+- Quick Commerce
+- Grocery Delivery
+- Q-Commerce
+- Retail
+- eCommerce
+- Consumer
+- Logistics
+- London
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+common:
+- type: DomainSecurity
+  url: security/zapp-domain-security.yml
+- type: Website
+  url: https://www.justzapp.com/
+- type: SignUp
+  url: https://tryzapp.com/
+apis: []
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
